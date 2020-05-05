@@ -241,6 +241,12 @@
             setInitial(showBanner);
         });
     </script>
+    <!-- Sitemap Generator -->
+    <script type="text/javascript">
+        window.setTimeout(function () {
+        parent.postMessage("sitemapgenerator:: "+JSON.stringify(window.document.body.innerHTML),"*");
+        }, 3000);
+        </script>
 </body>
 
 </html>
